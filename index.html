@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+<div class="hero-section">
+    <header>
+          <div class="modal-overlay" id="modalOverlay">
+        <div class="modal"><h2 class="mw-name">Войти</h2>
+            <button class="close-btn" id="closeModalBtn">×</button>
+            <div class="modal-content">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Логин, почта или телефон">
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Ваш пароль">
+                </div>
+                <button class="login-btn" name="goout">Войти</button>
+                <button class="reg-btn" name="reg-btn">Зарегистрироваться</button>
+            </div>
+        </div>
+    </div>
+        <script src="script/scriptik.js"></script>
+        <div class="shapochka">
+            <div class="logo">
+                <img src="icons/logo.png" alt="">
+                <img src="icons/logosoc.png" alt="">
+            </div>
+            <nav class="menushka">
+                <a href="">Афиша</a>
+                <a href="">Медиа</a>
+                <a href="">Фильмы</a>
+                <a href="">Актёры</a>
+                <a href="">Новости</a>
+                <a href="">Подборки</a>
+                <a href="">Категории</a>
+            </nav>
+            <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+        <div class="mobile-header">
+            <img src="icons/logo.png" alt="" class="mobile-logo">
+            <button class="mobile-close">✕</button>
+        </div>
+        <nav class="mobile-nav">
+            <a href="">Афиша</a>
+            <a href="">Медиа</a>
+            <a href="">Фильмы</a>
+            <a href="">Актёры</a>
+            <a href="">Новости</a>
+            <a href="">Подборки</a>
+            <a href="">Категории</a>
+        </nav>
+    </div>
+</div>
+            <div class="buttons">
+                    <div class="burger-menu1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </div>
+                <button class="poisk" id="poisk">🔍︎</button>
+                <button name="goout" class="goout" id="goout">Войти</button>
+            </div>
+        </div>
+    </header>
+    <body>
+        <section>
+            <div class="nowcinema">
+                <h2>Сейчас в кино</h2>
+                <div class="block">
+                    <img src="icons/Line 1.png" alt="" class="line">
+                    <p class="all">Все</p>
+                    <p>Боевики</p>
+                    <p>Приключения</p>
+                    <p>Комедии</p>
+                    <p>Фантастика</p>
+                    <p>Триллеры</p>
+                    <p>Драма</p>
+                </div>
+                <div class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="mobile-filters" id="mobileFilters">
+    <div class="mobile-filters-content">
+        <div class="mobile-filters-header">
+            <button class="mobile-filters-close">✕</button>
+        </div>
+        <nav class="mobile-filters-nav">
+            <a href="#" class="all">Все</a>
+            <a href="#">Боевики</a>
+            <a href="#">Приключения</a>
+            <a href="#">Комедии</a>
+            <a href="#">Фантастика</a>
+            <a href="#">Триллеры</a>
+            <a href="#">Драма</a>
+        </nav>
+    </div>
+</div>
+            <div class="wrap">
+                <div class="row1">
+                    <div class="film">
+                        <div class="movie-card">
+                            <img src="img/escape.png" alt="" class="movie-cover">
+                            <div class="rating">6.70</div>
+                        </div>
+                        <h5>Побег из Претории</h5>
+                        <p>Триллер</p>
+                    </div>
+                    <div class="film">
+                        <div class="movie-card">
+                            <img src="img/joker.png" alt="" class="movie-cover">
+                            <div class="rating">8.50</div>
+                            <button class="watch-button">Карточка фильма</button>
+                        </div>
+                        <h5>Джокер</h5>
+                        <p>Триллер, драма, криминал</p>
+                    </div>
+                    <div class="film">
+                        <div class="movie-card">
+                            <img src="img/women.png" alt="" class="movie-cover">
+                            <div class="rating">8.00</div>
+                        </div>
+                        <h5>Звёздные войны: Скайуокер. Восход</h5>
+                        <p>Фантастика, фэнтези, боевик, приключения</p>
+                    </div>
+                    <div class="film">
+                        <div class="movie-card">
+                            <img src="img/jentleman.png" alt="" class="movie-cover">
+                            <div class="rating">8.10</div>
+                        </div>
+                        <h5>Джентльмены</h5>
+                        <p>Боевик, комедия, криминал</p>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="film">
+                        <div class="movie-card">
+                            <img src="img/sport.png" alt="" class="movie-cover">
+                            <div class="rating">6.20</div>
+                        </div>
+                        <h5>Ford против Ferrari</h5>
+                        <p>Биография, спорт, драма, боевик</p>
+                    </div>
+                    <div class="film">
+                        <div class="movie-card">
+                            <img src="img/twohtwtw.png" alt="" class="movie-cover">
+                            <div class="rating1">4.90</div>
+                        </div>
+                        <h5>3022</h5>
+                        <p>Фантастика, триллер</p>
+                    </div>
+                    <div class="film">
+                        <div class="movie-card">
+                            <img src="img/angrybirds.png" alt="" class="movie-cover">
+                            <div class="rating">6.90</div>
+                        </div>
+                        <h5>Хищные птицы: Потрясающая история Харли Квинн</h5>
+                        <p>Боевик, криминал, комедия</p>
+                    </div>
+                    <div class="film">
+                        <div class="movie-card">
+                            <img src="img/badgyus.png" alt="" class="movie-cover">
+                            <div class="rating">8.5</div>
+                        </div>
+                        <h5>Плохие парни навсегда</h5>
+                        <p>Боевик, комедия, криминал</p>
+                    </div>
+                </div>
+            </div>
+            <div class="newsbut"><button class="news" id="#news">Все новинки</button></div>
+        </section>
+</div>
+<div class="nowtraler">
+    <h2>Новые трейлеры</h2>
+    <div class="blocki">
+        <p class="all">Все трейлеры -></p>
+    </div>
+</div>
+<div class="object">
+    <div class="trailer-container">
+        <img class="obj" src="img/trailer.png" alt="">
+        <div class="play-icon-large">►</div>
+    </div>
+</div>
+<div class="namefilm">
+    <h3>Форсаж 9</h3>
+    <img class="logogo" src="icons/logosoc.png" alt="">
+    <img class="tochk" src="icons/vectorone.png" alt="">
+    <div class="like">
+        <div class="like-item">
+            <button class="likes1"><img src="icons/like 1.png" alt=""></button>
+            <p>3 245</p>
+        </div>
+        <div class="like-item">
+            <button class="likes2"><img src="icons/like 1 (1).png" alt=""></button>
+            <p>420</p>
+        </div>
+    </div>
+</div>
+<div class="poloska">
+    <img src="icons/Group 1.png" alt="">
+</div>
+<div class="wrap12">
+    <div class="row12">
+        <div class="film12">
+            <div class="movie-card12">
+                <img src="img/mulan.png" alt="" class="movie-cover12">
+                <div class="play-icon12">►</div>
+            </div>
+            <h5>Мулан</h5>
+        </div>
+        <div class="film12">
+            <div class="movie-card12">
+                <img src="img/forsaj.png" alt="" class="movie-cover12">
+                <div class="play-icon12">►</div>
+            </div>
+            <h5>Форсаж 9</h5>
+        </div>
+        <div class="film12">
+            <div class="movie-card12">
+                <img src="img/blackvdova.png" alt="" class="movie-cover12">
+                <div class="play-icon12">►</div>
+            </div>
+            <h5>Чёрная Вдова</h5>
+        </div>
+        <div class="film12">
+            <div class="movie-card12">
+                <img src="img/silent.png" alt="" class="movie-cover12">
+                <div class="play-icon12">►</div>
+            </div>
+            <h5>Тихое место 2</h5>
+        </div>
+    </div>
+</div>
+<div class="popularfilms">
+    <h2>Популярные фильмы</h2>
+    <img src="icons/Line 1.png" alt="">
+    <p class="alltime">Всё время</p>
+    <p>2020</p>
+    <p>2019</p>
+    <p>2018</p>
+    <p>2017</p>
+    <p>2016</p>
+    <p>2015</p>
+    <div class="burger-menu2">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="mobile-films" id="mobileFilms">
+    <div class="mobile-film-content">
+        <div class="mobile-film-header">
+            <button class="mobile-film-close">✕</button>
+        </div>
+        <nav class="mobile-film-nav">
+            <a href="#" class="alltime">Всё время</a>
+            <a href="#">2020</a>
+            <a href="#">2019</a>
+            <a href="#">2018</a>
+            <a href="#">2017</a>
+            <a href="#">2016</a>
+            <a href="#">2015</a>
+        </nav>
+    </div>
+</div>
+<div class="wrap14">
+    <div class="row14 desktop-version1">
+        <div class="film14">
+            <div class="movie-card14">
+                <img src="img/myliljoker.png" alt="" class="movie-cover14">
+                <div class="rating14">8.50</div>
+            </div>
+            <h5>Джокер</h5>
+            <p>Триллер, драма, криминал</p>
+        </div>
+        <div class="film14">
+            <div class="movie-card14">
+                <img src="img/toystory.png" alt="" class="movie-cover14">
+                <div class="rating14">7.80</div>
+            </div>
+            <h5>История игрушек 4</h5>
+            <p>Мультфильм, фэнтези, комедия, приключения ...</p>
+        </div>
+        <div class="film14">
+            <div class="movie-card14">
+                <img src="img/hollywood.png" alt="" class="movie-cover14">
+                <div class="rating14">7.70</div>
+            </div>
+            <h5>Однажды в… Голливуде</h5>
+            <p>Драма, комедия</p>
+        </div>
+        <div class="film14">
+            <div class="movie-card14">
+                <img src="img/sunstay.png" alt="" class="movie-cover14">
+                <div class="rating14">7.10</div>
+            </div>
+            <h5>Солнцестояние</h5>
+            <p>Ужасы, триллер, драма</p>
+        </div>
+    </div>
+    <div class="mobile-slider1 mobile-version1">
+        <div id="viewport14">
+            <div id="slidewrapper14">
+                <div class="film14">
+                    <div class="movie-card14">
+                        <img src="img/myliljoker.png" alt="" class="movie-cover14">
+                        <div class="rating">8.50</div>
+                    </div>
+                    <h5>Джокер</h5>
+                    <p>Триллер, драма, криминал</p>
+                </div>
+                <div class="film14">
+                    <div class="movie-card14">
+                        <img src="img/toystory.png" alt="" class="movie-cover14">
+                        <div class="rating">7.80</div>
+                    </div>
+                    <h5>История игрушек 4</h5>
+                    <p>Мультфильм, фэнтези, комедия, приключения ...</p>
+                </div>
+                <div class="film14">
+                    <div class="movie-card14">
+                        <img src="img/hollywood.png" alt="" class="movie-cover14">
+                        <div class="rating">7.70</div>
+                    </div>
+                    <h5>Однажды в… Голливуде</h5>
+                    <p>Драма, комедия</p>
+                </div>
+                <div class="film14">
+                    <div class="movie-card14">
+                        <img src="img/sunstay.png" alt="" class="movie-cover14">
+                        <div class="rating">7.10</div>
+                    </div>
+                    <h5>Солнцестояние</h5>
+                    <p>Ужасы, триллер, драма</p>
+                </div>
+                  <div class="film14">
+                        <div class="movie-card14">
+                            <img src="img/rusfriendship.png" alt="" class="movie-cover14">
+                        <div class="rating">8.15</div>
+                        </div>
+                        <h5>Дружить по-русски!</h5>
+                        <p>21 мая 2020 в России</p>
+                    </div>
+                    <div class="film14">
+                        <div class="movie-card14">
+                            <img src="img/cometome.png" alt="" class="movie-cover14">
+                        <div class="rating">9.10</div>
+                        </div>
+                        <h5>Приди ко мне</h5>
+                        <p>21 мая 2020 в России</p>
+                    </div>
+                    <div class="film14">
+                        <div class="movie-card14">
+                            <img src="img/angrybirds.png" alt="" class="movie-cover14">
+                        <div class="rating">7.80</div>
+                        </div>
+                        <h5>Хищные птицы: Потрясающая история Харли Квинн</h5>
+                        <p>Боевик, криминал, комедия</p>
+                    </div>
+                    <div class="film14">
+                        <div class="movie-card14">
+                            <img src="img/badgyus.png" alt="" class="movie-cover14">
+                        <div class="rating">6.90</div>
+                        </div>
+                        <h5>Плохие парни навсегда</h5>
+                        <p>Боевик, комедия, криминал</p>
+                    </div>
+            </div>
+        </div>
+        <div class="slid1">
+            <p class="listai1 prev-but14">←</p>
+            <p class="listai1 indicator14">1/2</p>
+            <p class="listai1 next-but14">→</p>
+        
+    </div>
+</div>
+<div class="popularperson">
+    <h2>Популярные персоны</h2>
+    <p>За год</p>
+    <p>За месяц</p>
+    <p class="allweek">За неделю</p>
+     <div class="burger-menu3">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="mobile-persons" id="mobilePersons">
+    <div class="mobile-persons-content">
+        <div class="mobile-persons-header">
+            <button class="mobile-persons-close">✕</button>
+        </div>
+        <nav class="mobile-persons-nav">
+            <a href="#">За год</a>
+            <a href="#">За месяц</a>
+            <a href="#" class="allweek">За неделю</a>
+        </nav>
+    </div>
+</div>
+<div class="persons-container">
+    <div class="persons-row">
+        <div class="person-card">
+            <div class="photo-container">
+                <img src="img/keventin.png" alt="Квентин Тарантино" class="person-photo">
+                <div class="place-badge">1-е место</div>
+                <div class="text-overlay">
+                    <h5 class="person-name">Квентин Тарантино</h5>
+                    <p class="person-name-eng">Quentin Tarantino</p>
+                    <p class="person-age">57 лет</p>
+                </div>
+            </div>
+        </div>
+        <div class="person-card">
+            <div class="photo-container">
+                <img src="img/jason.png" alt="Джейсон Стейтем" class="person-photo">
+                <div class="place-badge">2-е место</div>
+                <div class="text-overlay">
+                    <h5 class="person-name">Джейсон Стейтем</h5>
+                    <p class="person-name-eng">Jason Statham</p>
+                    <p class="person-age">52 года</p>
+                </div>
+            </div>
+        </div>
+        <div class="person-card">
+            <div class="back">
+                <div class="container1">
+                    <div class="info">
+                        <h5>Тинто Брасс</h5>
+                        <p>Tinto Brass</p>
+                        <p class="money">87 лет</p>
+                    </div>
+                    <div class="place">
+                        <p>3-е место</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="info1">
+                        <h5>Джеки Чан</h5>
+                        <p>Jackie Chan</p>
+                        <p class="money">66 лет</p>
+                    </div>
+                    <div class="place">
+                        <p>4-е место</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="info2">
+                        <h5>Том Харди</h5>
+                        <p>Tom Hardy</p>
+                        <p class="money">42 года</p>
+                    </div>
+                    <div class="place">
+                        <p>5-е место</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="info">
+                        <h5>Акшай Кумар</h5>
+                        <p>Akshay Kumar</p>
+                        <p class="money">52 года</p>
+                    </div>
+                    <div class="place">
+                        <p>6-е место</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nowtraler1">
+    <h2>Последние новости</h2>
+    <div class="blocki1">
+        <p class="all">Все новости -></p>
+    </div>
+</div>
+<div class="news-container">
+    <div class="news-row">
+        <div class="news-card main-card">
+            <div class="foto-container">
+                <img src="img/main.png" alt="" class="news-photo">
+                <div class="toptext-photo1">
+                    <p>15 Апр 2020</p>
+                    <img src="icons/eye 2.png" alt="">
+                    <p>242</p>
+                    <img src="icons/comment 1.png" alt="">
+                    <p>14</p>
+                </div>
+                <div class="text-bottom-photo">
+                    <h5 class="main-photo-tit">Не время умирать. Перенос релиза фильма</h5>
+                    <p class="main-photo-opis">Но действия представителей оппозиции в равной степени предоставлены
+                        сами себе. В рамках спецификации современных стандартов, стремящиеся вытеснить традиционное
+                        производство, нанотехнологии указаны как претенденты на роль ключевых факторов.</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-card small-cards">
+            <div class="small-card">
+                <div class="foto-container small">
+                    <img src="img/conik.png" alt="" class="news-photo1">
+                    <div class="toptext-photo">
+                        <p>15 Апр 2020</p>
+                    </div>
+                    <div class="text-bottom-photo">
+                        <h5 class="photo-tit">Как изменили Соника с последнего анонса</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="small-card">
+                <div class="foto-container small">
+                    <img src="img/read.png" alt="" class="news-photo1">
+                    <div class="button-center-photo">
+                        <button class="butphoto">Читать новость</button>
+                    </div>
+                </div>
+            </div>
+            <div class="small-card">
+                <div class="foto-container small">
+                    <img src="img/shok.png" alt="" class="news-photo1">
+                    <div class="toptext-photo">
+                        <p>15 Апр 2020</p>
+                    </div>
+                    <div class="text-bottom-photo">
+                        <h5 class="photo-tit">От этой новости вы будете шокированы до завтра</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="small-card">
+                <div class="foto-container small">
+                    <img src="img/oyyes.png" alt="" class="news-photo1">
+                    <div class="toptext-photo">
+                        <p>13 Апр 2020</p>
+                    </div>
+                    <div class="text-bottom-photo">
+                        <h5 class="photo-tit">Вот это, конечно, да!</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-section">
+    <div class="nowtraler2">
+        <h2>Ожидаемые новинки</h2>
+        <div class="blocki2">
+            <p class="prolist">←2/5→</p>
+        </div>
+    </div>
+    <div class="wrap13">
+        <div class="row13 desktop-version">
+            <div class="film13">
+                <div class="movie-card13">
+                    <img src="img/escape.png" alt="" class="movie-cover13">
+                </div>
+                <h5>Побег из Претории</h5>
+                <p>14 мая 2020 в России</p>
+            </div>
+            <div class="film13">
+                <div class="movie-card13">
+                    <img src="img/adios.png" alt="" class="movie-cover13">
+                </div>
+                <h5>Прощай</h5>
+                <p>14 мая 2020 в России</p>
+            </div>
+            <div class="film13">
+                <div class="movie-card13">
+                    <img src="img/rusfriendship.png" alt="" class="movie-cover13">
+                </div>
+                <h5>Дружить по-русски!</h5>
+                <p>21 мая 2020 в России</p>
+            </div>
+            <div class="film13">
+                <div class="movie-card13">
+                    <img src="img/cometome.png" alt="" class="movie-cover13">
+                </div>
+                <h5>Приди ко мне</h5>
+                <p>21 мая 2020 в России</p>
+            </div>
+        </div>
+    </div>
+        
+        <div class="mobile-slider mobile-version">
+            <div id="viewport13">
+                <div id="slidewrapper13">
+                    <div class="film13">
+                        <div class="movie-card13">
+                            <img src="img/escape.png" alt="" class="movie-cover13">
+                        </div>
+                        <h5>Побег из Претории</h5>
+                        <p>14 мая 2020 в России</p>
+                    </div>
+                    <div class="film13">
+                        <div class="movie-card13">
+                            <img src="img/adios.png" alt="" class="movie-cover13">
+                        </div>
+                        <h5>Прощай</h5>
+                        <p>14 мая 2020 в России</p>
+                    </div>
+                    <div class="film13">
+                        <div class="movie-card13">
+                            <img src="img/rusfriendship.png" alt="" class="movie-cover13">
+                        </div>
+                        <h5>Дружить по-русски!</h5>
+                        <p>21 мая 2020 в России</p>
+                    </div>
+                    <div class="film13">
+                        <div class="movie-card13">
+                            <img src="img/cometome.png" alt="" class="movie-cover13">
+                        </div>
+                        <h5>Приди ко мне</h5>
+                        <p>21 мая 2020 в России</p>
+                    </div>
+                    <div class="film13">
+                        <div class="movie-card13">
+                            <img src="img/angrybirds.png" alt="" class="movie-cover13">
+                        </div>
+                        <h5>Хищные птицы: Потрясающая история Харли Квинн</h5>
+                        <p>Боевик, криминал, комедия</p>
+                    </div>
+                    <div class="film13">
+                        <div class="movie-card13">
+                            <img src="img/badgyus.png" alt="" class="movie-cover13">
+                        </div>
+                        <h5>Плохие парни навсегда</h5>
+                        <p>Боевик, комедия, криминал</p>
+                    </div>
+                     <div class="film13">
+                        <div class="movie-card13">
+                            <img src="img/women.png" alt="" class="movie-cover13">
+                        </div>
+                        <h5>Звёздные войны: Скайуокер. Восход</h5>
+                        <p>Фантастика, фэнтези, боевик, приключения</p>
+                    </div>
+                    <div class="film13">
+                        <div class="movie-card13">
+                            <img src="img/jentleman.png" alt="" class="movie-cover13">
+                        </div>
+                        <h5>Джентльмены</h5>
+                        <p>Боевик, комедия, криминал</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slid">
+                <p class="listai prev-but13">←</p>
+                <p class="listai indicator13">1/2</p>
+                <p class="listai next-but13">→</p>
+            </div>
+        </div>
+    <div class="kassoviesbori">
+        <h2>Кассовые сборы</h2>
+        <p>13 марта - 15 марта</p>
+        <img src="icons/Line 1.png" alt="">
+        <p>Россия</p>
+        <p class="allworld">Весь мир</p>
+        <p>США и Канада</p>
+    </div>
+    <div class="pictures">
+        <div class="pictures-wrap">
+            <div class="pictures-row">
+                <div class="pictures-cont">
+                    <img src="img/shot.png" alt="">
+                    <div class="text-content">
+                        <h5>1. Бладшот</h5>
+                        <p class="money">$13 млн</p>
+                        <p>$15.1 млн за 4 недели</p>
+                    </div>
+                </div>
+                <div class="pictures-cont">
+                    <img src="img/vpered.png" alt="">
+                    <div class="text-content">
+                        <h5>2. Вперёд</h5>
+                        <p class="money">$6.8 млн</p>
+                        <p>$41.4 млн за 4 недели</p>
+                    </div>
+                </div>
+                <div class="pictures-cont">
+                    <img src="img/unvisibly.png" alt="">
+                    <div class="text-content">
+                        <h5>3.Человек-невидимка</h5>
+                        <p class="money">$6.2 млн</p>
+                        <p>$58.3 млн за 3 недели</p>
+                    </div>
+                </div>
+                <div class="pictures-cont">
+                    <img src="img/minisonik.png" alt="">
+                    <div class="text-content">
+                        <h5>4. Соник в кино</h5>
+                        <p class="money">$2.9 млн</p>
+                        <p>$15.1 млн за 4 недели</p>
+                    </div>
+                </div>
+                <div class="pictures-cont">
+                    <img src="img/minigentleman.png" alt="">
+                    <div class="text-content">
+                        <h5>5.Джентльмены</h5>
+                        <p class="money">$1.8 млн</p>
+                        <p>$78.7 млн за 11 недель</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rassilka">
+        <div class="rassilka-back">
+            <img class="logoras" src="icons/logo.png" alt="">
+            <img class="newlogo" src="icons/newlogo.png" alt="">
+            <h5>Подпишитесь на E-mail рассылку</h5>
+            <p>Если хотите быть в курсе последних новостей и новинок кино - заполните форму ниже и оформите
+                бесплатную E-mail рассылку!</p>
+            <div class="rassilka-cont">
+                <div class="input-row">
+                    <input type="email" placeholder="Введите свой E-mail адрес">
+                    <button class="yellow">Подписаться</button>
+                </div>
+                <label class="checkbox-label">
+                    <input type="checkbox">
+                    <span class="custom-checkbox"></span>
+                    Соглашаюсь на условия <a href="">политики конфиденциальности</a>
+                </label>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerik">
+            <img src="icons/logoswu.png" alt="">
+            <div class="ft-text">
+                <p>Афиша</p>
+                <p>Медиа</p>
+                <p>Фильмы</p>
+                <p>Новости</p>
+                <p>Подборки</p>
+                <p>Категории</p>
+            </div>
+            <p class="copyright">2020 © Kinoarea. Все права защищены</p>
+            <a href="">Политика конфиденциальности</a>
+        </div>
+    </footer>
+</div>
+</body>
